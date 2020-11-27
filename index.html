@@ -1,75 +1,292 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="StyleSheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script type="text/javascript" src="assets/js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
+    <title>Tintuc.vn</title>
 </head>
 
 <body>
-    <header>
-        <h1>MySite</h1>
-        <h3>Slogan go here...</h3>
-    </header>
-    <nav>
-        <ul>
-            <li><a data-section="home">Home</a></li>
-            <li><a data-section="services">Services</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Products</a>
-                <div class="dropdown-content">
-                    <a data-section="link1">Link 1</a>
-                    <a data-section="link2">Link 2</a>
-                    <a data-section="link3">Link 3</a>
+    <div id="wrapper">
+        <div id="header">
+            <div class="container justify-content-between">
+                <a href="" class="logo">
+                    <h1>TIN<span>TỨC</span></h1>
+                </a>
+                <form action="#" id="search">
+                    <input type="text" name="q" placeholder="Bạn muốn tìm gì?">
+                    <button><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="container">
+                <nav>
+                    <ul id="main-menu" class="d-flex">
+                        <li>
+                            <a href="#">Trang chủ</a>
+                        </li>
+                        <li class="active">
+                            <a href="#list-feature-post">Nổi bật</a>
+                        </li>
+                        <li>
+                            <a href="#box-news-post">Bài viết mới</a>
+                        </li>
+                        <li>
+                            <a href="#list-topic">Chủ đề quan tâm</a>
+                        </li>
+                        <li>
+                            <a href="#box-about-us">Về chúng tôi</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- end header  -->
+        <div id="wp-feature-post" class="container">
+            <div id="box-feature-post">
+                <div class="box-head">
+                    <h3>Nổi bật</h3>
                 </div>
-            </li>
-            <li style="float:right"><a data-section="about">About us</a></li>
-        </ul>
-    </nav>
+                <div class="box-body">
+                    <ul id="list-feature-post" class="d-flex justify-content-between">
+                        <li>
+                            <a href="" class="post-thumb">
+                                <img src="assets/images/pic-1.png" alt="">
+                            </a>
+                            <a href="" class="post-title">Xu hướng thời trang hè 2020: Những mảnh ghép đáng được chú
+                                ý</a>
+                        </li>
+                        <li>
+                            <a href="" class="post-thumb">
+                                <img src="assets/images/pic-2.png" alt="">
+                            </a>
+                            <a href="" class="post-title">Buổi trình diễn thời trang mùa xuân tại Đại học Michigan đã
+                                bắt đầu</a>
+                        </li>
+                        <li>
+                            <a href="" class="post-thumb">
+                                <img src="assets/images/pic-3.png" alt="">
+                            </a>
+                            <a href="" class="post-title">Bật mí cách mặc đẹp cho người mập trở nên thon gọn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end wp-feature-post  -->
+        <div id="wp-content" class="container">
+            <div id="content">
+                <div id="box-news-post">
+                    <div class="box-head">
+                        <h3>Bài viết mới</h3>
+                    </div>
+                    <div class="box-body">
+                        <ul id="list-post">
+                            <li>
+                                <a href="" class="post-thumb">
+                                    <img src="assets/images/pic-4.png" alt="">
+                                </a>
+                                <div class="more-info">
+                                    <a href="" class="post-title">Bạn có phải là một người phụ nữ có phong cách?</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">anhduong</a>
+                                        <span class="post-date">20/11/2020</span>
+                                    </div>
+                                    <p class="exceprt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis. </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="" class="post-thumb">
+                                    <img src="assets/images/pic-5.png" alt="">
+                                </a>
+                                <div class="more-info">
+                                    <a href="" class="post-title">Cách để bạn ltuôn tỏa sáng trước đám đông</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">anhduong</a>
+                                        <span class="post-date">20/11/2020</span>
+                                    </div>
+                                    <p class="exceprt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis. </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="" class="post-thumb">
+                                    <img src="assets/images/pic-6.png" alt="">
+                                </a>
+                                <div class="more-info">
+                                    <a href="" class="post-title">Top 10 nữ hoàng DJ nỗi tiếng nhất Las Vegas bạn cần
+                                        biết</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">anhduong</a>
+                                        <span class="post-date">20/11/2020</span>
+                                    </div>
+                                    <p class="exceprt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis. </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="" class="post-thumb">
+                                    <img src="assets/images/pic-7.png" alt="">
+                                </a>
+                                <div class="more-info">
+                                    <a href="" class="post-title">Những kiểu tóc mới là xu hướng của giới trẻ 2020</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">anhduong</a>
+                                        <span class="post-date">20/11/2020</span>
+                                    </div>
+                                    <p class="exceprt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis. </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="" class="post-thumb">
+                                    <img src="assets/images/pic-8.png" alt="">
+                                </a>
+                                <div class="more-info">
+                                    <a href="" class="post-title">15 địa điểm du lịch nổi tiếng bạn cần đến tại Việt
+                                        Nam</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">anhduong</a>
+                                        <span class="post-date">20/11/2020</span>
+                                    </div>
+                                    <p class="exceprt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis. </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="" class="post-thumb">
+                                    <img src="assets/images/pic-9.png" alt="">
+                                </a>
+                                <div class="more-info">
+                                    <a href="" class="post-title">Hãy xách balo lên và đi và trải nghiệm những khoảnh
+                                        khắc thú vị</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">anhduong</a>
+                                        <span class="post-date">20/11/2020</span>
+                                    </div>
+                                    <p class="exceprt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis. </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-    <section id="home" class="hideable-section">
-        <div>Home content</div>
-    </section>
-
-    <section id="services" class="hideable-section">
-        <div>Services content</div>
-    </section>
-
-    <section id="about" class="hideable-section">
-        <div>About content</div>
-    </section>
-
-    <section id="link1" class="hideable-section">
-        <div>Link1 content</div>
-    </section>
-
-    <section id="link2" class="hideable-section">
-        <div>Link2 content</div>
-    </section>
-
-    <section id="link3" class="hideable-section">
-        <div>Link3 content</div>
-    </section>
-
-    <script>
-        $(function() {
-            $('nav ul li a').click(function() {
-                // Lấy section để hiển thị
-                var $section = $('#' + $(this).data('section'));
-
-                // Nếu đang hiện thì không làm gì.
-                // Nếu không, ẩn tất cả các se cho hiện (kiểu fade in) phần mong muốn.
-                if (!$section.is(':visible')) {
-                    $('.hideable-section').hide();
-                    $section.fadeIn();
-                }
-            });
-        });
-    </script>
+            </div>
+            <!-- end content  -->
+            <div id="siderbar">
+                <a href="" class="ads">
+                    <img src="assets/images/ads.png" alt="">
+                </a>
+                <div id="box-top-topic">
+                    <div class="box-head">
+                        <h3>Chủ Đề quan tâm</h3>
+                    </div>
+                    <div class="box-body">
+                        <ul id="list-topic">
+                            <li>
+                                <a href="">thời trang<span class="num-post">20</span></a>
+                            </li>
+                            <li>
+                                <a href="">đời sống<span class="num-post">20</span></a>
+                            </li>
+                            <li>
+                                <a href="">xã hội<span class="num-post">20</span></a>
+                            </li>
+                            <li>
+                                <a href="">bóng đá<span class="num-post">20</span></a>
+                            </li>
+                            <li>
+                                <a href="">điện ảnh<span class="num-post">20</span></a>
+                            </li>
+                            <li>
+                                <a href="">sự kiện<span class="num-post">20</span></a>
+                            </li>
+                            <li>
+                                <a href="">sự kiện<span class="num-post">20</span></a>
+                            </li>
+                            <li>
+                                <a href="">du lịch<span class="num-post">20</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end siderbar  -->
+        </div>
+        <!-- end wp-content  -->
+        <div id="footer">
+            <div class="container">
+                <div id="box-logo-footer">
+                    <div class="box-head">
+                        <h3>Tintuc.vn</h3>
+                    </div>
+                    <div class="box-body">
+                        <a href="" class="logo-footer">
+                            <h1>TIN<span>TỨC</span></h1>
+                        </a>
+                    </div>
+                </div>
+                <!-- end logo-footer  -->
+                <div id="box-about-us">
+                    <div class="box-head">
+                        <h3>Về chúng tôi</h3>
+                    </div>
+                    <div class="box-body">
+                        <p>Tintuc.vn là trang báo cập nhập tin tức nhanh chóng và chính xác nhất hiện nay.Được thành lập vào ngày 28/11/2020.
+                        </p>
+                        <a href="http://tintuc.vn">http://tintuc.vn</a>
+                    </div>
+                </div>
+                <!-- end about us  -->
+                <div id="box-follow-us">
+                    <div class="box-head">
+                        <h3>Theo dõi</h3>
+                    </div>
+                    <div class="box-body">
+                        <ul id="list-social" class="d-flex">
+                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
+                            <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                            <li><a href=""><i class="fab fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end follow us  -->
+            </div>
+            <!-- end footer  -->
+        </div>
+        <div id="wp-copyright">
+            <div class="container justify-content-between">
+                <p class="copyright">
+                    Bản quyền © Tintuc.vn - Được thành lập bởi Nguyễn Anh Dương
+                </p>
+                <ul id="list-menu-footer" class="d-flex">
+                    <li>
+                        <a href="">Bảo mật</a>
+                    </li>
+                    <li>
+                        <a href="">Quảng cáo</a>
+                    </li>
+                    <li>
+                        <a href="">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end wp-copyright  -->
+    </div>
+    <a href="#top" class="to-top"><i class="fas fa-chevron-circle-up fa-2x"></i></a>
 </body>
 
 </html>
