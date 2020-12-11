@@ -1,0 +1,8 @@
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+    margin: 0px;
+}

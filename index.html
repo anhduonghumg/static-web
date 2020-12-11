@@ -4,86 +4,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <script type="text/javascript" src="assets/js/jquery-3.4.1.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
-
-    <title>Tintuc.vn</title>
+    <link rel="StyleSheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <title>Landing Page</title>
 </head>
 
 <body>
-    <div id="wrapper">
-        <div id="header">
-            <div class="container justify-content-between">
-                <a href="" class="logo">
-                    <h1>TIN<span>TỨC</span></h1>
-                </a>
-                <form action="#" id="search">
-                    <input type="text" name="q" placeholder="Bạn muốn tìm gì?">
-                    <button><i class="fas fa-search"></i></button>
-                </form>
+    <header>
+        <h1>TINTUC.VN</h1>
+        <h3>Sẵn sàng một sức sống!</h3>
+    </header>
+    <nav>
+        <ul class="main-menu">
+            <li><a data-section="home">Trang chủ</a></li>
+            <li><a data-section="fashion">Thời trang</a></li>
+            <li><a data-section="football">Bóng đá</a></li>
+            <li><a data-section="word">Xã hội</a></li>
+            <li style="float:right"><a data-section="about">Về chúng tôi</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hideable-section">
+        <div id="news">
+            <div id="box-head">
+                <h3>Thời trang</h3>
             </div>
-            <div class="container">
-                <nav>
-                    <ul id="main-menu" class="d-flex">
-                        <li>
-                            <a href="#">Trang chủ</a>
-                        </li>
-                        <li class="active">
-                            <a href="#list-feature-post">Nổi bật</a>
-                        </li>
-                        <li>
-                            <a href="#box-news-post">Bài viết mới</a>
-                        </li>
-                        <li>
-                            <a href="#list-topic">Chủ đề quan tâm</a>
-                        </li>
-                        <li>
-                            <a href="#box-about-us">Về chúng tôi</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <!-- end header  -->
-        <div id="wp-feature-post" class="container">
-            <div id="box-feature-post">
-                <div class="box-head">
-                    <h3>Nổi bật</h3>
-                </div>
-                <div class="box-body">
-                    <ul id="list-feature-post" class="d-flex justify-content-between">
-                        <li>
-                            <a href="" class="post-thumb">
-                                <img src="assets/images/pic-1.png" alt="">
-                            </a>
-                            <a href="" class="post-title">Xu hướng thời trang hè 2020: Những mảnh ghép đáng được chú
-                                ý</a>
-                        </li>
-                        <li>
-                            <a href="" class="post-thumb">
-                                <img src="assets/images/pic-2.png" alt="">
-                            </a>
-                            <a href="" class="post-title">Buổi trình diễn thời trang mùa xuân tại Đại học Michigan đã
-                                bắt đầu</a>
-                        </li>
-                        <li>
-                            <a href="" class="post-thumb">
-                                <img src="assets/images/pic-3.png" alt="">
-                            </a>
-                            <a href="" class="post-title">Bật mí cách mặc đẹp cho người mập trở nên thon gọn
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <div id="box-body">
+                <ul id="list-news" class="d-flex justify-content-between">
+                    <li>
+                        <a class="post-thumb" href=""><img src="img/pic-3.png" alt=""></a>
+                        <a class="post-title" href="">Xu hướng thời trang hè 2020: Những mảnh ghép đáng được chú
+                            ý</a>
+                    </li>
+                    <!-- end-2  -->
+                    <li>
+                        <a class="post-thumb" href=""><img src="img/pic-1.png" alt=""></a>
+                        <a class="post-title" href="">Buổi trình diễn thời trang mùa xuân tại Đại học Michigan đã
+                            bắt đầu</a>
+                    </li>
+                    <!-- end-3  -->
+                    <li>
+                        <a class="post-thumb" href=""><img src="img/pic-2.png" alt=""></a>
+                        <a class="post-title" href="">Bật mí cách mặc đẹp cho người mập trở nên thon gọn
+                        </a>
+                    </li>
+                    <!-- end-4  -->
+                </ul>
             </div>
         </div>
-        <!-- end wp-feature-post  -->
-        <div id="wp-content" class="container">
+        <!-- end-news  -->
+        <div id="society">
+            <div id="box-head">
+                <h3>Xã Hội</h3>
+            </div>
+            <div id="box-body">
+                <ul id="list-society" class="d-flex justify-content-between">
+                    <li>
+                        <a class="post-thumb" href=""><img src="img/pic-16.png" alt=""></a>
+                        <a class="post-title" href="">Giãn Cách Xã Hội Sau khi Covid Tràn Vào</a>
+                    </li>
+                    <!-- end-2  -->
+                    <li>
+                        <a class="post-thumb" href=""><img src="img/pic-20.png" alt=""></a>
+                        <a class="post-title" href="">Hội Y Tế Công Cộng Việt Nam 2020
+                        </a>
+                    </li>
+                    <!-- end-3  -->
+                    <li>
+                        <a class="post-thumb" href=""><img src="img/pic-18.png" alt=""></a>
+                        <a class="post-title" href="">Luật Bảo Hiểm Xã Hội Mới Nhất 2020 Thay Đổi Như Thế Nào?
+                        </a>
+                    </li>
+                    <!-- end-4  -->
+                </ul>
+            </div>
+        </div>
+        <!-- end-xh  -->
+        <div id="soccer">
+            <div id="box-head">
+                <h3>Bóng đá</h3>
+            </div>
+            <div id="box-body">
+                <ul id="list-soccer" class="d-flex justify-content-between">
+                    <li>
+                        <a class="post-thumb" href=""><img src="img/pic-21.png" alt=""></a>
+                        <a class="post-title" href="">Bruno tỏa sáng M.U giành chiến thắng nghẹt thở</a>
+                    </li>
+                    <!-- end-2  -->
+                    <li>
+                        <a class="post-thumb" href=""><img src="img/pic-22.png" alt=""></a>
+                        <a class="post-title" href="">Đình Trọng bị tái phát trấn thương sau buổi tập cùng đội tuyển Việt Nam
+                        </a>
+                    </li>
+                    <!-- end-3  -->
+                    <li>
+                        <a class="post-thumb" href=""><img src="img/pic-24.png" alt=""></a>
+                        <a class="post-title" href="">Liverpool đại thắng trong ngày Salah thăng hoa
+                        </a>
+                    </li>
+                    <!-- end-4  -->
+                </ul>
+            </div>
+        </div>
+        <!-- end-soccer -->
+    </section>
+    <!-- end-section-home -->
+    <section id="fashion" class="hideable-section">
+        <div id="container" class="d-flex">
             <div id="content">
                 <div id="box-news-post">
                     <div class="box-head">
@@ -93,7 +121,7 @@
                         <ul id="list-post">
                             <li>
                                 <a href="" class="post-thumb">
-                                    <img src="assets/images/pic-4.png" alt="">
+                                    <img src="img/pic-4.png" alt="">
                                 </a>
                                 <div class="more-info">
                                     <a href="" class="post-title">Bạn có phải là một người phụ nữ có phong cách?</a>
@@ -102,95 +130,97 @@
                                         <span class="post-date">20/11/2020</span>
                                     </div>
                                     <p class="exceprt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                                        facilisis. </p>
+                                        facilisis.
+                                    </p>
                                 </div>
                             </li>
                             <li>
                                 <a href="" class="post-thumb">
-                                    <img src="assets/images/pic-5.png" alt="">
+                                    <img src="img/pic-5.png" alt="">
                                 </a>
                                 <div class="more-info">
-                                    <a href="" class="post-title">Cách để bạn ltuôn tỏa sáng trước đám đông</a>
+                                    <a href="" class="post-title">Cách để bạn luôn tỏa sáng trước đám đông</a>
                                     <div class="post-published">
                                         <a href="" class="post-author">anhduong</a>
                                         <span class="post-date">20/11/2020</span>
                                     </div>
                                     <p class="exceprt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                                        facilisis. </p>
+                                        facilisis.
+                                    </p>
                                 </div>
                             </li>
                             <li>
                                 <a href="" class="post-thumb">
-                                    <img src="assets/images/pic-6.png" alt="">
+                                    <img src="img/pic-6.png" alt="">
                                 </a>
                                 <div class="more-info">
-                                    <a href="" class="post-title">Top 10 nữ hoàng DJ nỗi tiếng nhất Las Vegas bạn cần
-                                        biết</a>
+                                    <a href="" class="post-title">Top 10 nữ hoàng Dj nổi tiếng nhất Las Vegas bạn cần biết</a>
                                     <div class="post-published">
                                         <a href="" class="post-author">anhduong</a>
                                         <span class="post-date">20/11/2020</span>
                                     </div>
                                     <p class="exceprt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                                        facilisis. </p>
+                                        facilisis.
+                                    </p>
                                 </div>
                             </li>
                             <li>
                                 <a href="" class="post-thumb">
-                                    <img src="assets/images/pic-7.png" alt="">
+                                    <img src="img/pic-7.png" alt="">
                                 </a>
                                 <div class="more-info">
-                                    <a href="" class="post-title">Những kiểu tóc mới là xu hướng của giới trẻ 2020</a>
+                                    <a href="" class="post-title">Những kiểu tóc mới xu hướng của giới trẻ 2020</a>
                                     <div class="post-published">
                                         <a href="" class="post-author">anhduong</a>
                                         <span class="post-date">20/11/2020</span>
                                     </div>
                                     <p class="exceprt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                                        facilisis. </p>
+                                        facilisis.
+                                    </p>
                                 </div>
                             </li>
                             <li>
                                 <a href="" class="post-thumb">
-                                    <img src="assets/images/pic-8.png" alt="">
+                                    <img src="img/pic-8.png" alt="">
                                 </a>
                                 <div class="more-info">
-                                    <a href="" class="post-title">15 địa điểm du lịch nổi tiếng bạn cần đến tại Việt
-                                        Nam</a>
+                                    <a href="" class="post-title">15 địa điểm du lịch nổi tiếng của Việt Nam mà bạn nên đến</a>
                                     <div class="post-published">
                                         <a href="" class="post-author">anhduong</a>
                                         <span class="post-date">20/11/2020</span>
                                     </div>
                                     <p class="exceprt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                                        facilisis. </p>
+                                        facilisis.
+                                    </p>
                                 </div>
                             </li>
                             <li>
                                 <a href="" class="post-thumb">
-                                    <img src="assets/images/pic-9.png" alt="">
+                                    <img src="img/pic-9.png" alt="">
                                 </a>
                                 <div class="more-info">
-                                    <a href="" class="post-title">Hãy xách balo lên và đi và trải nghiệm những khoảnh
-                                        khắc thú vị</a>
+                                    <a href="" class="post-title">Hãy xách balo lên đi và trải nghiệm những khoảng khắc thú vị</a>
                                     <div class="post-published">
                                         <a href="" class="post-author">anhduong</a>
                                         <span class="post-date">20/11/2020</span>
                                     </div>
                                     <p class="exceprt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                                        facilisis. </p>
+                                        facilisis.
+                                    </p>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-
+                <div style="text-align: center;"><button id="btn-more">Xem thêm</button></div>
             </div>
-            <!-- end content  -->
             <div id="siderbar">
                 <a href="" class="ads">
-                    <img src="assets/images/ads.png" alt="">
+                    <img src="img/ads.png" alt="">
                 </a>
                 <div id="box-top-topic">
                     <div class="box-head">
-                        <h3>Chủ Đề quan tâm</h3>
+                        <h3>Chủ Đề Quan Tâm</h3>
                     </div>
                     <div class="box-body">
                         <ul id="list-topic">
@@ -213,6 +243,146 @@
                                 <a href="">sự kiện<span class="num-post">20</span></a>
                             </li>
                             <li>
+                                <a href="">du lịch<span class="num-post">20</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end siderbar  -->
+        </div>
+    </section>
+    <!-- end-section-fashion  -->
+    <section id="football" class="hideable-section">
+        <div id="container" class="d-flex">
+            <div id="content">
+                <div id="box-news-post">
+                    <div class="box-head">
+                        <h3>Bài viết mới</h3>
+                    </div>
+                    <div class="box-body">
+                        <ul id="list-post">
+                            <li>
+                                <a href="" class="post-thumb">
+                                    <img src="img/pic-25.png" alt="">
+                                </a>
+                                <div class="more-info">
+                                    <a href="" class="post-title">Bruno và HLV Mourinho được vinh danh</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">anhduong</a>
+                                        <span class="post-date">20/11/2020</span>
+                                    </div>
+                                    <p class="exceprt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="" class="post-thumb">
+                                    <img src="img/pic-26.png" alt="">
+                                </a>
+                                <div class="more-info">
+                                    <a href="" class="post-title">Lukaku khiến đồng đội và đối thủ khiếp vía</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">anhduong</a>
+                                        <span class="post-date">20/11/2020</span>
+                                    </div>
+                                    <p class="exceprt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="" class="post-thumb">
+                                    <img src="img/pic-27.png" alt="">
+                                </a>
+                                <div class="more-info">
+                                    <a href="" class="post-title">Các cầu thủ Barcelona chống đối Messi</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">anhduong</a>
+                                        <span class="post-date">20/11/2020</span>
+                                    </div>
+                                    <p class="exceprt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="" class="post-thumb">
+                                    <img width="200px" height="133px" src="img/pic-28.png" alt="">
+                                </a>
+                                <div class="more-info">
+                                    <a href="" class="post-title">Sóng ngầm ở Nou Camp</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">anhduong</a>
+                                        <span class="post-date">20/11/2020</span>
+                                    </div>
+                                    <p class="exceprt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="" class="post-thumb">
+                                    <img width="200px" height="133px" src="img/pic-29.png" alt="">
+                                </a>
+                                <div class="more-info">
+                                    <a href="" class="post-title">32 đội lọt vào vòng Knock-out Europa League</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">anhduong</a>
+                                        <span class="post-date">20/11/2020</span>
+                                    </div>
+                                    <p class="exceprt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="" class="post-thumb">
+                                    <img width="200px" height="133px" src="img/pic-30.png" alt="">
+                                </a>
+                                <div class="more-info">
+                                    <a href="" class="post-title">Bayern áp đảo danh sách đề cử đội hình tiêu biểu năm 2020 của Fifa</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">anhduong</a>
+                                        <span class="post-date">20/11/2020</span>
+                                    </div>
+                                    <p class="exceprt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="text-align: center;"><button id="btn-more">Xem thêm</button></div>
+            </div>
+            <div id="siderbar">
+                <a href="" class="ads">
+                    <img src="img/ads-3.png" alt="">
+                </a>
+                <div id="box-top-topic">
+                    <div class="box-head">
+                        <h3>Chủ Đề Quan Tâm</h3>
+                    </div>
+                    <div class="box-body">
+                        <ul id="list-topic">
+                            <li>
+                                <a href="">thời trang<span class="num-post">20</span></a>
+                            </li>
+                            <li>
+                                <a href="">đời sống<span class="num-post">20</span></a>
+                            </li>
+                            <li>
+                                <a href="">xã hội<span class="num-post">20</span></a>
+                            </li>
+                            <li>
+                                <a href="">bóng đá<span class="num-post">20</span></a>
+                            </li>
+                            <li>
+                                <a href="">điện ảnh<span class="num-post">20</span></a>
+                            </li>
+                            <li>
                                 <a href="">sự kiện<span class="num-post">20</span></a>
                             </li>
                             <li>
@@ -224,69 +394,188 @@
             </div>
             <!-- end siderbar  -->
         </div>
-        <!-- end wp-content  -->
-        <div id="footer">
-            <div class="container">
-                <div id="box-logo-footer">
+    </section>
+    <section id="word" class="hideable-section">
+        <div id="container" class="d-flex">
+            <div id="content">
+                <div id="box-news-post">
                     <div class="box-head">
-                        <h3>Tintuc.vn</h3>
+                        <h3>Bài viết mới</h3>
                     </div>
                     <div class="box-body">
-                        <a href="" class="logo-footer">
-                            <h1>TIN<span>TỨC</span></h1>
-                        </a>
-                    </div>
-                </div>
-                <!-- end logo-footer  -->
-                <div id="box-about-us">
-                    <div class="box-head">
-                        <h3>Về chúng tôi</h3>
-                    </div>
-                    <div class="box-body">
-                        <p>Tintuc.vn là trang báo cập nhập tin tức nhanh chóng và chính xác nhất hiện nay.Được thành lập vào ngày 28/11/2020.
-                        </p>
-                        <a href="http://tintuc.vn">http://tintuc.vn</a>
-                    </div>
-                </div>
-                <!-- end about us  -->
-                <div id="box-follow-us">
-                    <div class="box-head">
-                        <h3>Theo dõi</h3>
-                    </div>
-                    <div class="box-body">
-                        <ul id="list-social" class="d-flex">
-                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
-                            <li><a href=""><i class="fab fa-youtube"></i></a></li>
-                            <li><a href=""><i class="fab fa-pinterest-p"></i></a></li>
+                        <ul id="list-post">
+                            <li>
+                                <a href="" class="post-thumb">
+                                    <img src="img/pic-31.png" alt="">
+                                </a>
+                                <div class="more-info">
+                                    <a href="" class="post-title">Hoàn thiện và tăng cường hiệu quả thi hành pháp luật</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">anhduong</a>
+                                        <span class="post-date">20/11/2020</span>
+                                    </div>
+                                    <p class="exceprt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="" class="post-thumb">
+                                    <img src="img/pic-32.png" alt="">
+                                </a>
+                                <div class="more-info">
+                                    <a href="" class="post-title">Tăng cường kỷ luật trong công tác xây dựng pháp luật</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">anhduong</a>
+                                        <span class="post-date">20/11/2020</span>
+                                    </div>
+                                    <p class="exceprt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="" class="post-thumb">
+                                    <img src="img/pic-33.png" alt="">
+                                </a>
+                                <div class="more-info">
+                                    <a href="" class="post-title">Hội thảo khoa học phấn đấu xứng danh "Bộ đội Cụ Hồ" thời kì mới</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">anhduong</a>
+                                        <span class="post-date">20/11/2020</span>
+                                    </div>
+                                    <p class="exceprt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="" class="post-thumb">
+                                    <img src="img/pic-34.png" alt="">
+                                </a>
+                                <div class="more-info">
+                                    <a href="" class="post-title">Thủ tướng chính phủ phê chuẩn nhân sự hai tỉnh Hưng Yên và Thừa Thiên Huế</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">anhduong</a>
+                                        <span class="post-date">20/11/2020</span>
+                                    </div>
+                                    <p class="exceprt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="" class="post-thumb">
+                                    <img src="img/pic-35.png" alt="">
+                                </a>
+                                <div class="more-info">
+                                    <a href="" class="post-title">Dâng hoa kỷ niệm 100 năm ngày sinh của Chủ tịch Cayson Phomvihan</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">anhduong</a>
+                                        <span class="post-date">20/11/2020</span>
+                                    </div>
+                                    <p class="exceprt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="" class="post-thumb">
+                                    <img src="img/pic-36.png" alt="">
+                                </a>
+                                <div class="more-info">
+                                    <a href="" class="post-title">Từ bài học sương máu đến thành quả lớn lao</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">anhduong</a>
+                                        <span class="post-date">20/11/2020</span>
+                                    </div>
+                                    <p class="exceprt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis.
+                                    </p>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
-                <!-- end follow us  -->
+                <div style="text-align: center;"><button id="btn-more">Xem thêm</button></div>
             </div>
-            <!-- end footer  -->
-        </div>
-        <div id="wp-copyright">
-            <div class="container justify-content-between">
-                <p class="copyright">
-                    Bản quyền © Tintuc.vn - Được thành lập bởi Nguyễn Anh Dương
-                </p>
-                <ul id="list-menu-footer" class="d-flex">
-                    <li>
-                        <a href="">Bảo mật</a>
-                    </li>
-                    <li>
-                        <a href="">Quảng cáo</a>
-                    </li>
-                    <li>
-                        <a href="">Liên hệ</a>
-                    </li>
-                </ul>
+            <div id="siderbar">
+                <a href="" class="ads">
+                    <img width="363px" height="202px" src="img/ads-1.png" alt="">
+                </a>
+                <div id="box-top-topic">
+                    <div class="box-head">
+                        <h3>Chủ Đề Quan Tâm</h3>
+                    </div>
+                    <div class="box-body">
+                        <ul id="list-topic">
+                            <li>
+                                <a href="">thời trang<span class="num-post">20</span></a>
+                            </li>
+                            <li>
+                                <a href="">đời sống<span class="num-post">20</span></a>
+                            </li>
+                            <li>
+                                <a href="">xã hội<span class="num-post">20</span></a>
+                            </li>
+                            <li>
+                                <a href="">bóng đá<span class="num-post">20</span></a>
+                            </li>
+                            <li>
+                                <a href="">điện ảnh<span class="num-post">20</span></a>
+                            </li>
+                            <li>
+                                <a href="">sự kiện<span class="num-post">20</span></a>
+                            </li>
+                            <li>
+                                <a href="">du lịch<span class="num-post">20</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+            <!-- end siderbar  -->
         </div>
-        <!-- end wp-copyright  -->
-    </div>
-    <a href="#top" class="to-top"><i class="fas fa-chevron-circle-up fa-2x"></i></a>
+    </section>
+    <section id="about" class="hideable-section">
+        <h3>Giới thiệu</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eum saepe eius, veritatis soluta quis impedit! Quas dolore dolor dignissimos aperiam expedita. Voluptatibus impedit non sint ad earum atque perspiciatis unde dolore maxime quam quisquam
+            tempore, suscipit ullam facilis est asperiores libero omnis. Dolorem eaque nemo dolore minima, dicta, vitae magnam eos animi iusto perferendis corporis rem sed quidem rerum pariatur assumenda ab saepe cumque quam adipisci voluptatem dolor?
+            Quam, labore minima? Porro minima vel in, magnam, iste quis est alias, quia aut mollitia repellat velit dolorum eum vero? Molestias aut consequatur eveniet delectus, doloremque cumque enim dolorem facere voluptatum distinctio. In harum maxime
+            inventore accusamus natus nam repellendus, ipsum, quo perferendis sed quam aspernatur. Nemo facere non similique et molestiae. Vero quae odit qui in, architecto eius facilis numquam? Commodi beatae ut distinctio numquam a fugiat ducimus nisi
+            reprehenderit iure? Vel fugiat beatae necessitatibus, magnam ea facilis provident velit tempora, harum aliquid exercitationem, amet similique id illo reiciendis. Fugiat ipsa quasi recusandae earum eaque ab, labore saepe, quod iste aliquid
+            repudiandae animi molestiae minus, commodi doloremque enim quaerat laudantium? Possimus, labore velit placeat, et hic illum ratione iste molestias, alias ea iure earum eligendi facere quidem repudiandae. Quia, sed neque mollitia, corporis
+            culpa veniam aliquam aperiam rem commodi fugit quasi, quam exercitationem optio expedita rerum ex ullam? Natus, ipsam quidem, rem modi enim laudantium odit perspiciatis porro repellat commodi, eius magnam consectetur fugit vitae inventore
+            harum quis adipisci nisi eum perferendis eaque accusamus? Voluptatum aliquam iusto nesciunt, adipisci amet architecto nulla deleniti, maxime unde rerum, ut nihil facere officia minus beatae numquam eius cupiditate quis quam. Placeat autem
+            delectus natus fugiat ipsa animi quisquam, explicabo nostrum architecto beatae hic eius aliquam. Optio molestias officiis neque. Voluptates et modi numquam facilis esse eos eaque cum quis quia? Totam at aliquid ducimus excepturi ullam corporis
+            molestiae quasi, adipisci sit veniam deleniti quisquam! Error, natus. Quam fugiat laudantium aspernatur blanditiis in non reiciendis corrupti asperiores, dolore, aperiam aut et repellendus aliquid quae a natus incidunt iusto illum, corporis
+            explicabo molestiae suscipit exercitationem tempore? Vel dolorum quidem dolore possimus dolores. Aspernatur nemo ut deleniti labore soluta nihil molestiae unde voluptas ex dolorum enim quia maxime, impedit fugiat vitae dolorem eaque, pariatur
+            incidunt quis excepturi. Quia natus eos et, doloremque vel assumenda perferendis asperiores nemo illo? Quis quibusdam labore, porro numquam dicta ducimus, incidunt repellendus, corrupti accusantium voluptatum illum fugit ad. Cumque, ab quo
+            soluta provident tempore numquam deleniti enim corporis placeat officiis rerum praesentium! Aut dolores ducimus magnam debitis tempore laborum, repudiandae assumenda voluptatum error modi! Inventore ex unde quos, culpa dicta nisi officiis
+            aperiam accusamus veritatis nemo eligendi natus saepe laboriosam repellat aut dolorem eum quia exercitationem? Corporis sint facilis quam ipsam, enim id, sunt numquam recusandae voluptatum modi quibusdam deserunt, aut fugit ducimus? Ullam
+            inventore id totam explicabo nostrum cum. Ut, commodi adipisci. Quasi sapiente adipisci tempore commodi obcaecati, ad ex, molestiae sequi a soluta voluptates dolor ea quibusdam dicta inventore ab voluptate reprehenderit sunt mollitia dolore
+            aperiam nostrum neque itaque!</p>
+    </section>
+
+    <!-- FOOTER  -->
+    <footer>
+        <p>Copyright © 2020 - 2021 - Tintuc.vn được thành lập và phát triển bởi AnhDuong</p>
+        <p>Thông tin và hình ảnh chỉ mang tính tham khảo. Chúng tôi chưa cung cấp dịch vụ trên website này.</p>
+    </footer>
+    <script>
+        $(function() {
+            $('ul.main-menu li a').click(function() {
+                // Lấy section để hiển thị
+                var $section = $('#' + $(this).data('section'));
+                // Nếu đang hiện thì không làm gì.
+                // Nếu không, ẩn tất cả các se cho hiện (kiểu fade in) phần mong muốn.
+                if (!$section.is(':visible')) {
+                    $('.hideable-section').hide();
+                    $section.fadeIn();
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

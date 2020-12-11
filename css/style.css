@@ -1,0 +1,418 @@
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            color: #666;
+        }
+        /* Header/logo tiêu đề */
+        /* .container {
+            width: 1170px;
+            margin: 0px auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            display: flex;
+        } */
+        
+        header {
+            padding: 5px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+            height: 120px;
+        }
+        /* Tăng kích thước font chữ cho header */
+        
+        header h1 {
+            font-size: 40px;
+        }
+        
+        header h1,
+        h2,
+        h3 {
+            color: white;
+        }
+        
+        section {
+            padding: 20px;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid #e7e7e7;
+            background-color: #f3f3f3;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: #666;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /* li a:hover:not(.active),
+        .dropdown:hover .dropbtn {
+            color: white;
+            background-color: #4CAF50;
+        } */
+        
+        li.dropdown {
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: #666;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        /* Landing page */
+        
+        .active {
+            display: block;
+        }
+        
+        .hideable-section {
+            display: none;
+        }
+        
+        .hideable-section:first-of-type {
+            display: block;
+        }
+        
+        ul.main-menu li:hover a {
+            color: #1abc9c;
+            cursor: pointer;
+        }
+        /* Content */
+        
+        section #box-head h3 {
+            display: inline-block;
+            background-color: #1abc9c;
+            color: #eeeeee;
+            font-weight: 600;
+            padding: 1px 15px;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            font-size: 16px;
+            padding: 5px 10px;
+        }
+        
+        #soccer #box-head h3 {
+            margin-top: 20px;
+        }
+        
+        #society #box-head h3 {
+            margin-top: 20px;
+        }
+        
+        ul#list-news {
+            margin-top: 20px;
+            background-color: white;
+        }
+        
+        ul#list-news li {
+            flex: 0 1 360px;
+        }
+        
+        ul#list-news a.post-thumb {
+            overflow: hidden;
+            display: block;
+        }
+        
+        ul#list-news li a.post-thumb img {
+            transition: all 0.5s;
+        }
+        
+        ul#list-news li a.post-thumb:hover img {
+            transform: scale(1, 1);
+        }
+        
+        ul#list-news li a.post-title {
+            font-size: 18px;
+            text-align: left;
+            text-decoration: underline;
+        }
+        /* SOCIETY */
+        
+        ul#list-society {
+            margin-top: 20px;
+            background-color: white;
+        }
+        
+        ul#list-society li {
+            flex: 0 1 360px;
+        }
+        
+        ul#list-society a.post-thumb {
+            overflow: hidden;
+            display: block;
+        }
+        
+        ul#list-society li a.post-thumb img {
+            transition: all 0.5s;
+        }
+        
+        ul#list-society li a.post-thumb:hover img {
+            transform: scale(1, 1);
+        }
+        
+        ul#list-society li a.post-title {
+            font-size: 18px;
+            text-align: left;
+            text-decoration: underline;
+        }
+        /* SOCCER */
+        
+        ul#list-soccer {
+            margin-top: 20px;
+            background-color: white;
+        }
+        
+        ul#list-soccer li {
+            flex: 0 1 360px;
+        }
+        
+        ul#list-soccer a.post-thumb {
+            overflow: hidden;
+            display: block;
+        }
+        
+        ul#list-soccer li a.post-thumb img {
+            transition: all 0.5s;
+        }
+        
+        ul#list-soccer li a.post-thumb:hover img {
+            transform: scale(1, 1);
+        }
+        
+        ul#list-soccer li a.post-title {
+            font-size: 18px;
+            text-align: left;
+            text-decoration: underline;
+        }
+        
+        #box-news-post .box-body ul#list-post li a.post-thumb {
+            flex: 263px;
+            padding-right: 15px;
+            display: block;
+        }
+        
+        #box-news-post .box-body ul#list-post li .more-info {
+            padding-left: 15px;
+        }
+        
+        #box-news-post .box-body ul#list-post li .more-info a.post-title {
+            color: #111111;
+            font-weight: 600;
+            font-size: 21px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        #box-news-post .box-body ul#list-post li .more-info .post-published {
+            padding: 8px 0px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        
+        #box-news-post .box-body ul#list-post li .more-info .post-published a.post-author {
+            color: #111111;
+            margin-right: 3px;
+        }
+        
+        #box-news-post .box-body ul#list-post li .more-info .post-published .post-date {
+            color: #aaaaaa;
+            margin-left: 3px;
+        }
+        
+        #box-news-post .box-body ul#list-post li .more-info .exceprt {
+            font-size: 13px;
+            color: #777777;
+            margin-bottom: 0px;
+        }
+        /* Thời trang */
+        
+        #content {
+            flex: 765px;
+            padding-right: 15px;
+        }
+        
+        #box-news-post .box-head {
+            border-bottom: 2px solid #1abc9c;
+        }
+        
+        #box-news-post .box-head h3 {
+            background-color: #1abc9c;
+            display: inline-block;
+            padding: 5px 10px;
+        }
+        
+        #box-news-post .box-body {
+            padding-top: 20px;
+        }
+        
+        #box-news-post .box-body ul#list-post {
+            background: white;
+            border: none;
+        }
+        
+        #box-news-post .box-body ul#list-post li {
+            display: flex;
+            margin-bottom: 40px;
+        }
+        
+        #box-news-post .box-body ul#list-post li a.post-thumb {
+            flex: 263px;
+            padding: 0px;
+            display: block;
+            padding-right: 15px;
+        }
+        
+        #box-news-post .box-body ul#list-post li .more-info {
+            padding-left: 15px;
+            text-align: left;
+        }
+        
+        #box-news-post .box-body ul#list-post li .more-info a.post-title {
+            color: #111111;
+            font-weight: 600;
+            font-size: 25px;
+            text-decoration: none;
+            display: block;
+            padding: 0px;
+            text-align: left;
+        }
+        
+        #box-news-post .box-body ul#list-post li .more-info .post-published {
+            padding: 11px 0px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        
+        #box-news-post .box-body ul#list-post li .more-info .post-published a.post-author {
+            color: #111111;
+            margin-right: 3px;
+            padding: 0;
+        }
+        
+        #box-news-post .box-body ul#list-post li .more-info .post-published .post-date {
+            color: #aaaaaa;
+            margin-left: 3px;
+        }
+        
+        #box-news-post .box-body ul#list-post li .more-info .exceprt {
+            font-size: 16px;
+            color: #777777;
+            margin-bottom: 0px;
+        }
+        
+        #btn-more {
+            border-radius: 3rem;
+            padding: 5px 10px;
+            background-color: #1abc9c;
+            color: white;
+            border: 1px solid #1abc9c;
+        }
+        
+        #siderbar {
+            flex: 375px;
+            padding-left: 15px;
+            margin-top: 40px;
+        }
+        
+        #box-top-topic .box-head {
+            border-bottom: 2px solid #ff2d2d;
+        }
+        
+        #box-top-topic .box-head h3 {
+            background-color: #ff2d2d;
+            margin-top: 40px;
+            display: inline-block;
+            padding: 5px 10px;
+        }
+        
+        #box-top-topic {
+            width: 365px;
+        }
+        
+        #box-top-topic .box-body {
+            padding-top: 36px;
+        }
+        
+        #box-top-topic .box-body ul#list-topic {
+            background-color: white;
+            border: none;
+        }
+        
+        #box-top-topic .box-body ul#list-topic li {
+            float: none;
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        #box-top-topic .box-body ul#list-topic li a {
+            color: #212121;
+            padding: 5px 0px;
+            display: block;
+            text-transform: capitalize;
+            position: relative;
+            text-decoration: none;
+            text-align: left;
+        }
+        
+        #box-top-topic .box-body ul#list-topic .num-post {
+            position: absolute;
+            top: 7px;
+            right: 20px;
+        }
+        
+        #box-top-topic .box-body ul#list-topic li:hover a {
+            color: #ff2d2d;
+        }
+        /* About */
+        
+        #about h3 {
+            font-size: 18px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #1abc9c;
+            margin-bottom: 20px;
+        }
+        /* footer */
+        
+        footer {
+            background-color: #1abc9c;
+            padding-top: 45px;
+            padding-bottom: 65px;
+            margin-top: 40px;
+        }
+        
+        footer p {
+            text-align: center;
+            color: white;
+        }
